@@ -1,0 +1,9 @@
+/node_modules/
+/dist/
+/.tmp/
+/.sass-cache/
+/bower_components/
+/.idea/
+
+# Estilo descartado, se usa SASS "main.scss"
+/app/styles/main.css*
