@@ -29,6 +29,14 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+      .when('/participantes',{
+        templateUrl: 'views/participantes.html',
+        controller: 'ParticipantesController'
+      })
+      .when('/torneos',{
+        templateUrl: 'views/torneos.html',
+        controller: 'TorneosController'
+      })
       .otherwise({
         redirectTo: '/'
       });

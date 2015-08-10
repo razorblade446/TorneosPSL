@@ -42,6 +42,7 @@
         <ul class="nav navbar-nav navbar-left">
           <li><a ng-href="#/participantes">Participantes</a></li>
           <li><a ng-href="#/grupos">Grupos</a></li>
+          <li><a ng-href="#/torneos">Torneos</a> </li>
           <li><a ng-href="#/progreso">Progreso</a></li>
         </ul>
 
@@ -56,12 +57,12 @@
   </div>
 </div>
 
-<div class="container">
+<div class="container-fluid">
   <div ng-view=""></div>
 </div>
 
 <div class="footer">
-  <div class="container">
+  <div class="container-fluid">
     <p><span class="glyphicon glyphicon-heart"></span> from the Yeoman team</p>
   </div>
 </div>
@@ -91,6 +92,7 @@
 <script src="bower_components/angular-route/angular-route.js"></script>
 <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 <script src="bower_components/angular-touch/angular-touch.js"></script>
+<script src="bower_components/angularjs-gravatardirective/dist/angularjs-gravatardirective.min.js"></script>
 <script src="bower_components/pouchdb/dist/pouchdb.js"></script>
 <!-- endbower -->
 <!-- endbuild -->
@@ -99,6 +101,8 @@
 <script src="scripts/app.js"></script>
 <script src="scripts/controllers/main.js"></script>
 <script src="scripts/controllers/about.js"></script>
+<script src="scripts/controllers/participantes.js"></script>
+<script src="scripts/controllers/torneos.js"></script>
 <!-- endbuild -->
 </body>
 </html>

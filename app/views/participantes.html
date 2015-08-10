@@ -1,0 +1,22 @@
+<div ng-controller="ParticipantesController as participantes">
+  <h1>Participantes</h1>
+
+  <table class="table table-striped table-bordered table-responsive table-condensed table-hover">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombres</th>
+        <th>Apellidos</th>
+        <th>Gravatar</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="participante in participantes.getParticipantes()">
+        <td>{{ participante.id_participante }}</td>
+        <td>{{ participante.nombres }}</td>
+        <td>{{ participante.apellidos }}</td>
+        <td><gravatar-image gravatar-email="participante.email" gravatar-size="32" gravatar-default="identicon"></gravatar-image></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
